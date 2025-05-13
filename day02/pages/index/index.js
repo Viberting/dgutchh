@@ -7,6 +7,7 @@ Page({
     userInfo: {
       avatarUrl: defaultAvatarUrl,
       nickName: '',
+      count:0,
     },
     hasUserInfo: false,
     canIUseGetUserProfile: wx.canIUse('getUserProfile'),
