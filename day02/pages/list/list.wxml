@@ -1,0 +1,39 @@
+<!--pages/list/list.wxml-->
+<view>
+    {{info}}
+</view>
+<image src="{{img}}" mode=""/>
+<view>
+    {{randomNum > 5 ? 'Yes' : 'No'}}
+</view>
+
+<!-- 事件绑定 -->
+<button  bindtap="btnTapHandler">按钮</button>
+<button  bindtap="btnTapHandler2" data-info="{{1}}" type="primary">按钮2</button>
+
+<input type="text" name="" id="" bindinput="btnTapHandler3"/>
+
+<!-- 文本框和data之间的数据同步 -->
+<input type="text" name="" id="" value="{{msg}}" bindinput="btnTapHandler4"/>
+
+<!-- 条件渲染 -->
+<view wx:if="{{type === 1}}">男</view>
+<view wx:elif="{{type === 2}}">女</view>
+<view wx:else>其他</view>
+
+<block wx:if="{{false}}">
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+    <view>4</view>
+</block>
+
+<view hidden="{{flag}}">是否隐藏</view>
+
+<!-- 列表渲染 -->
+<view wx:for="{{arr1}}">
+    索引是：{{index}}, 项目是：{{item}}
+</view>
+
+<!-- GET请求和POST请求 -->
+<button bindtap="getInfo">发起GET请求</button>

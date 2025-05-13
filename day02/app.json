@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "学习第二天",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle":"dark",
+
+    "onReachBottomDistance": 20 
+  },
+  "tabBar": {
+      "list": [
+          {
+              "pagePath": "pages/list/list",
+              "text": "list"
+          },
+          {
+            "pagePath": "pages/index/index",
+            "text": "index"
+          }
+      ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
